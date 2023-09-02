@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/http/Lewis-McKenzie.github.io/gard-app/static/css/main.99e4cf39.css",
-    "main.js": "/http/Lewis-McKenzie.github.io/gard-app/static/js/main.bce0b4c3.js",
-    "index.html": "/http/Lewis-McKenzie.github.io/gard-app/index.html",
-    "main.99e4cf39.css.map": "/http/Lewis-McKenzie.github.io/gard-app/static/css/main.99e4cf39.css.map",
-    "main.bce0b4c3.js.map": "/http/Lewis-McKenzie.github.io/gard-app/static/js/main.bce0b4c3.js.map"
+    "main.css": "/gard-app/static/css/main.99e4cf39.css",
+    "main.js": "/gard-app/static/js/main.bce0b4c3.js",
+    "index.html": "/gard-app/index.html",
+    "main.99e4cf39.css.map": "/gard-app/static/css/main.99e4cf39.css.map",
+    "main.bce0b4c3.js.map": "/gard-app/static/js/main.bce0b4c3.js.map"
   },
   "entrypoints": [
     "static/css/main.99e4cf39.css",
