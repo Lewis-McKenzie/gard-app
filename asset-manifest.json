@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/gard-app/static/css/main.4be24787.css",
-    "main.js": "/gard-app/static/js/main.dfdcfbe1.js",
+    "main.css": "/gard-app/static/css/main.6291e5c9.css",
+    "main.js": "/gard-app/static/js/main.4a22ea32.js",
     "index.html": "/gard-app/index.html",
-    "main.4be24787.css.map": "/gard-app/static/css/main.4be24787.css.map",
-    "main.dfdcfbe1.js.map": "/gard-app/static/js/main.dfdcfbe1.js.map"
+    "main.6291e5c9.css.map": "/gard-app/static/css/main.6291e5c9.css.map",
+    "main.4a22ea32.js.map": "/gard-app/static/js/main.4a22ea32.js.map"
   },
   "entrypoints": [
-    "static/css/main.4be24787.css",
-    "static/js/main.dfdcfbe1.js"
+    "static/css/main.6291e5c9.css",
+    "static/js/main.4a22ea32.js"
   ]
 }
