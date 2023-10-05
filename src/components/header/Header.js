@@ -1,11 +1,10 @@
 import React from "react";
 import "./Header.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import logo from "../../resources/logo.png";
 
 const Header = () => {
   return (
@@ -14,11 +13,7 @@ const Header = () => {
         <Container>
           <Navbar.Brand>
             <NavLink className="nav-link" to="/">
-              <img
-                className="logo"
-                src="gard-app/Katie-Mckenzie-black-ink-high-res.png"
-                alt="home"
-              />
+              <img className="logo" src={logo} alt="home" />
             </NavLink>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

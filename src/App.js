@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
 import Header from "./components/header/Header";
 import NotFound from "./components/notFound/NotFound";
+import { Footer } from "./components/footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="*" element={<NotFound />}></Route>
         </Route>
       </Routes>
+      <Footer />
     </div>
   );
 }
