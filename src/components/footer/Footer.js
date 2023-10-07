@@ -1,4 +1,5 @@
 import React from "react";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export const Footer = () => {
   return (
@@ -17,6 +18,8 @@ export const Footer = () => {
           </div>
           <div className="col mb-3">
             <div>Connect</div>
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-instagram"></i>
           </div>
         </div>
       </footer>
