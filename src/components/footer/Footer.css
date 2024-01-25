@@ -1,0 +1,50 @@
+.footer-section {
+    text-align: center;
+    background-color: #f8f9fa;
+    /* Light background color matching the header */
+    color: #343a40;
+    /* Dark text color matching the header */
+    padding: 60px 0;
+}
+
+.footer-section h4 {
+    color: #28a745;
+    /* Green color matching the header */
+}
+
+.footer-section p {
+    font-size: 1rem;
+}
+
+.footer-section ul {
+    padding: 0;
+}
+
+.footer-section ul li {
+    list-style: none;
+}
+
+.footer-section a {
+    color: #343a40;
+    /* Dark text color matching the header */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-section a:hover {
+    color: #28a745;
+    /* Green color on hover matching the header */
+}
+
+.social-icons a {
+    color: #343a40;
+    /* Dark text color matching the header */
+    font-size: 1.5rem;
+    margin-right: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #28a745;
+    /* Green color on hover matching the header */
+}

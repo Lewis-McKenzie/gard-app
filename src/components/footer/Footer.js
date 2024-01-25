@@ -1,28 +1,37 @@
 import React from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import { Container, Row, Col } from 'react-bootstrap';
+import "./Footer.css"
 
 export const Footer = () => {
   return (
-    <div>
-      <footer id="sticky-footer" class="fixed-bottom bg-body-tertiary">
-        <div class="row my-5 border-top py-5 row-cols-1 row-cols-sm-2 row-cols-md-4">
-          <div className="col mb-3">
-            <div>logo</div>
-            <div>copyright</div>
-          </div>
-          <div className="col mb-3">
-            <div>Contact Info</div>
-          </div>
-          <div className="col mb-3">
-            <div>Services</div>
-          </div>
-          <div className="col mb-3">
-            <div>Connect</div>
-            <i class="fa fa-facebook-f"></i>
-            <i class="fa fa-instagram"></i>
-          </div>
-        </div>
-      </footer>
-    </div>
+    <footer className="footer-section bg-light text-dark py-4">
+      <Container>
+        <Row>
+          <Col md={4} className="mb-4">
+            <h4>Contact Us</h4>
+            <p>Email: info@greenthumbgardens.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+          </Col>
+          <Col md={4} className="mb-4">
+            <h4>Quick Links</h4>
+            <ul className="list-unstyled">
+              <li><a href="/">Home</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </Col>
+          <Col md={4} className="mb-4">
+            <h4>Follow Us</h4>
+            <div className="social-icons">
+              <a href="#" className="mr-3"><i className="fa fa-facebook"></i></a>
+              <a href="#" className="mr-3"><i className="fa fa-twitter"></i></a>
+              <a href="#" className="mr-3"><i className="fa fa-instagram"></i></a>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
   );
 };

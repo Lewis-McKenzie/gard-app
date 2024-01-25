@@ -1,7 +1,85 @@
-.logo {
-    max-width: 75px;
+body {
+    padding-top: 56px;
+    /* Adjust the value based on your Navbar height */
 }
 
-.nav-box {
-    align-content:center;
+@media (min-width: 992px) {
+    body {
+        padding-top: 80px;
+        /* Adjust the value based on your expanded Navbar height */
+    }
+}
+
+.navbar-custom {
+    background-color: #f8f9fa;
+    /* Muted white background color */
+    padding: 20px 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-custom .navbar-brand img {
+    height: 70px;
+    /* Adjust the height to make the logo slightly bigger */
+    transition: height 0.3s ease-in-out;
+    text-decoration: none;
+    /* Remove default underline for the logo */
+}
+
+.navbar-custom .nav-link {
+    color: #343a40;
+    /* Dark text color */
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+    /* Remove default underline */
+    position: relative;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #28a745;
+    /* Green color on hover */
+}
+
+.navbar-custom .nav-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    /* Adjust the value based on your preference */
+    left: 0;
+    width: 0;
+    /* Initially set to no width */
+    height: 2px;
+    /* Underline height */
+    background-color: #28a745;
+    /* Green color for the underline */
+    transition: width 0.3s ease-in-out;
+    /* Transition only the width property */
+}
+
+.navbar-custom .nav-link.active::after {
+    width: 100%;
+    /* Expand the underline to full width when active */
+}
+
+.navbar-custom.navbar-expanded {
+    background-color: #fff;
+    /* Light background color when expanded */
+}
+
+.navbar-custom.navbar-expanded .navbar-brand img {
+    height: 60px;
+    /* Increase logo height when expanded */
+}
+
+.navbar-custom.navbar-expanded .nav-link {
+    color: #343a40;
+    /* Dark text color when expanded */
+}
+
+.navbar-custom.navbar-expanded .nav-link.active::after {
+    background-color: #343a40;
+    /* Dark color for the underline when active */
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { Container } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
@@ -7,43 +7,42 @@ import { NavLink } from "react-router-dom";
 import logo from "../../resources/logo.png";
 
 const Header = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleNavItemClick = () => {
+    setExpanded(false);
+  };
+
   return (
-    <div>
-      <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand>
-            <NavLink className="nav-link" to="/">
-              <img className="logo" src={logo} alt="home" />
+    <Navbar expand="lg" className="navbar-custom fixed-top" expanded={expanded} onSelect={handleNavItemClick}>
+      <Container>
+        <Navbar.Brand>
+          <NavLink to="/">
+            <img className="logo" src={logo} alt="home" />
+          </NavLink>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <NavLink className="nav-link" to="/" onClick={() => setExpanded(false)}>
+              Home
             </NavLink>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <NavLink
-                className="nav-link"
-                to="/"
-                data-toggle="collapse"
-                data-target="#my-navbar"
-              >
-                Home
-              </NavLink>
-              <NavLink className="nav-link" to="/services">
-                Services
-              </NavLink>
-              <NavLink className="nav-link" to="/gallery">
-                Gallery
-              </NavLink>
-              <NavLink className="nav-link" to="/contact">
-                Contact
-              </NavLink>
-              <NavLink className="nav-link" to="/about">
-                About
-              </NavLink>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+            <NavLink className="nav-link" to="/services" onClick={() => setExpanded(false)}>
+              Services
+            </NavLink>
+            <NavLink className="nav-link" to="/gallery" onClick={() => setExpanded(false)}>
+              Gallery
+            </NavLink>
+            <NavLink className="nav-link" to="/contact" onClick={() => setExpanded(false)}>
+              Contact
+            </NavLink>
+            <NavLink className="nav-link" to="/about" onClick={() => setExpanded(false)}>
+              About
+            </NavLink>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
