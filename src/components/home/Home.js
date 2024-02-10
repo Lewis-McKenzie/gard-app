@@ -15,36 +15,44 @@ const Home = () => {
 
       <Container className="about-services-section my-5">
         <Row>
-          <Col md={6} className="mb-5">
-            <h2>About Us</h2>
-            <p>
-              At Katie McKenzie Garden Services, we're passionate about creating beautiful and sustainable outdoor spaces.
-              Our experienced team of gardeners is dedicated to bringing your vision to life.
-            </p>
+          <Col md={6}>
+            <div className="p-4 rounded shadow">
+              <div>
+                <h2>About Us</h2>
+                <p>
+                  At Katie McKenzie Garden Services, we're passionate about creating beautiful and sustainable outdoor spaces.
+                  Our experienced team of gardeners is dedicated to bringing your vision to life.
+                </p>
+              </div>
+            </div>
           </Col>
-          <Col md={6} className="mb-5">
-            <h2>Our Services</h2>
-            <ul>
-              <li>Landscape Design</li>
-              <li>Planting and Maintenance</li>
-              <li>Seasonal Cleanup</li>
-              <li>Irrigation Solutions</li>
-              {/* Add more services as needed */}
-            </ul>
+          <Col md={6}>
+            <div className="p-4 rounded shadow">
+              <h2>Our Services</h2>
+              <ul>
+                <li>Landscape Design</li>
+                <li>Planting and Maintenance</li>
+                <li>Seasonal Cleanup</li>
+                <li>Irrigation Solutions</li>
+              </ul>
+            </div>
           </Col>
         </Row>
       </Container>
 
       <Container className="contact-section my-5">
         <Row>
-          <Col md={6} className="mb-5">
-            <h2>Contact Us</h2>
-            <p>
-              Ready to transform your garden? Contact us for a personalized consultation and let's create something extraordinary together.
-            </p>
-            <Button variant="success">Get in Touch</Button>
+          <Col md={6}>
+            <div className="mb-5 p-4 rounded shadow">
+
+              <h2>Contact Us</h2>
+              <p>
+                Ready to transform your garden? Contact us for a personalized consultation and let's create something extraordinary together.
+              </p>
+              <Button variant="success">Get in Touch</Button>
+            </div>
           </Col>
-          <Col md={6} className="mb-5">
+          <Col md={6}>
             <img
               src="https://via.placeholder.com/800x600"
               alt="Beautiful garden"
