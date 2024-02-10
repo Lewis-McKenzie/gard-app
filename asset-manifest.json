@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/gard-app/static/css/main.86c29089.css",
-    "main.js": "/gard-app/static/js/main.567dc4e7.js",
+    "main.css": "/gard-app/static/css/main.9fb0d87b.css",
+    "main.js": "/gard-app/static/js/main.9f562c15.js",
     "static/media/logo.png": "/gard-app/static/media/logo.1ba906b34eb10c0712b9.png",
     "static/media/bootstrap-icons.woff?": "/gard-app/static/media/bootstrap-icons.449ad8adf6ae0424b7ed.woff",
     "static/media/bootstrap-icons.woff2?": "/gard-app/static/media/bootstrap-icons.dea24bf5a7646d8b84e7.woff2",
     "index.html": "/gard-app/index.html",
-    "main.86c29089.css.map": "/gard-app/static/css/main.86c29089.css.map",
-    "main.567dc4e7.js.map": "/gard-app/static/js/main.567dc4e7.js.map"
+    "main.9fb0d87b.css.map": "/gard-app/static/css/main.9fb0d87b.css.map",
+    "main.9f562c15.js.map": "/gard-app/static/js/main.9f562c15.js.map"
   },
   "entrypoints": [
-    "static/css/main.86c29089.css",
-    "static/js/main.567dc4e7.js"
+    "static/css/main.9fb0d87b.css",
+    "static/js/main.9f562c15.js"
   ]
 }
