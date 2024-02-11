@@ -1,8 +1,8 @@
 .App {
-  position: relative; 
+  position: relative;
   height: 100vh;
   width: 100%;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   text-align: center;
 }
