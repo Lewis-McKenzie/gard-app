@@ -1,5 +1,7 @@
 import React from "react";
 
 export const About = () => {
-  return <h1>About</h1>;
+  return <section id="about">
+    <h1>About</h1>
+  </section>;
 };

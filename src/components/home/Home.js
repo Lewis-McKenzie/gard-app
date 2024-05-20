@@ -4,19 +4,19 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 
 const Home = () => {
   return (
-    <div className="homepage-container">
+    <section className="homepage-container" id="home">
       <header className="hero-section text-center">
         <Container>
           <h1 className="display-3">Katie McKenzie Garden Services</h1>
           <p className="lead">Transforming Outdoor Spaces into Lush Gardens</p>
-          <Button variant="light" size="lg">Discover More</Button>
+          <Button variant="light" href="#contact" size="lg">Get In Touch</Button>
         </Container>
       </header>
 
-      <Container className="about-services-section my-5">
+      <Container className="about-services-section">
         <Row>
           <Col md={6}>
-            <div className="p-4 rounded shadow">
+            <div className="about-bx shadow">
               <div>
                 <h2>About Us</h2>
                 <p>
@@ -27,7 +27,7 @@ const Home = () => {
             </div>
           </Col>
           <Col md={6}>
-            <div className="p-4 rounded shadow">
+            <div className="about-bx shadow">
               <h2>Our Services</h2>
               <ul>
                 <li>Landscape Design</li>
@@ -37,19 +37,14 @@ const Home = () => {
               </ul>
             </div>
           </Col>
-        </Row>
-      </Container>
-
-      <Container className="contact-section my-5">
-        <Row>
           <Col md={6}>
-            <div className="mb-5 p-4 rounded shadow">
+            <div className="about-bx shadow">
 
               <h2>Contact Us</h2>
               <p>
                 Ready to transform your garden? Contact us for a personalized consultation and let's create something extraordinary together.
               </p>
-              <Button variant="success">Get in Touch</Button>
+              <Button href="#contact" variant="success">Get in Touch</Button>
             </div>
           </Col>
           <Col md={6}>
@@ -61,7 +56,7 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
-    </div>
+    </section >
   );
 };
 

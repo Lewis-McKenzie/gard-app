@@ -9,7 +9,11 @@
 .hero-section {
     background-color: #28a745;
     color: #fff;
-    padding: 100px 0;
+    margin-top: 0;
+    padding: 260px 0 200px 0;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero-section h1 {
@@ -23,8 +27,16 @@
 /* Main Content Styles */
 .about-services-section,
 .contact-section {
+    padding: 0 0 50px 0;
+    position: relative;
+    margin-top: -50px;
+}
+
+.about-bx {
+    padding: 10px 10px 50px 10px;
     background-color: #fff;
-    padding: 60px 0;
+    border-radius: 64px;
+    margin-bottom: 20px;
 }
 
 .about-services-section h2,

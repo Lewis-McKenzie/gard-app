@@ -4,7 +4,7 @@ import "./ServicesPage.css";
 
 const ServicesPage = () => {
   return (
-    <div className="services-container">
+    <section className="services-container" id="services">
       <div className="service-card">
         <h2 className="service-title">Our Services</h2>
         <ul className="service-list">
@@ -38,7 +38,7 @@ const ServicesPage = () => {
           <li>Surrounding Areas</li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

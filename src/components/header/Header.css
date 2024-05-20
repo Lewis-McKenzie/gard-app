@@ -1,23 +1,19 @@
-body {
-    padding-top: 100px;
-    /* Adjust the value based on your Navbar height */
+nav.navbar {
+    padding: 0px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    transition: 0.2s ease-in-out;
+    background-color: #f8f9fa94;
 }
 
-@media (min-width: 992px) {
-    body {
-        padding-top: 100px;
-        /* Adjust the value based on your expanded Navbar height */
-    }
-}
-
-.navbar-custom {
+nav.navbar.scrolled {
+    padding: 0px 0;
     background-color: #f8f9fa;
-    /* Muted white background color */
-    padding: 20px 0;
-    transition: background-color 0.3s ease-in-out;
 }
 
-.navbar-custom .navbar-brand img {
+img {
     height: 70px;
     /* Adjust the height to make the logo slightly bigger */
     transition: height 0.3s ease-in-out;
@@ -25,7 +21,7 @@ body {
     /* Remove default underline for the logo */
 }
 
-.navbar-custom .nav-link {
+.nav-link {
     color: #343a40;
     /* Dark text color */
     font-size: 16px;
@@ -38,12 +34,12 @@ body {
     transition: color 0.3s ease-in-out;
 }
 
-.navbar-custom .nav-link:hover {
+.nav-link:hover {
     color: #28a745;
     /* Green color on hover */
 }
 
-.navbar-custom .nav-link::after {
+.nav-link::after {
     content: '';
     display: block;
     position: absolute;
@@ -60,27 +56,27 @@ body {
     /* Transition only the width property */
 }
 
-.navbar-custom .nav-link.active::after {
+.nav-link.active::after {
     width: 100%;
     /* Expand the underline to full width when active */
 }
 
-.navbar-custom.navbar-expanded {
+.navbar-expanded {
     background-color: #fff;
     /* Light background color when expanded */
 }
 
-.navbar-custom.navbar-expanded .navbar-brand img {
+.navbar-expanded .navbar-brand img {
     height: 60px;
     /* Increase logo height when expanded */
 }
 
-.navbar-custom.navbar-expanded .nav-link {
+.navbar-expanded .nav-link {
     color: #343a40;
     /* Dark text color when expanded */
 }
 
-.navbar-custom.navbar-expanded .nav-link.active::after {
+.navbar-expanded .nav-link.active::after {
     background-color: #343a40;
     /* Dark color for the underline when active */
 }

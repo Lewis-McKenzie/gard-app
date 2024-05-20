@@ -1,0 +1,32 @@
+.frame {
+    width: 600px;
+    /* Adjust as needed */
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.frame-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.frame-content {
+    padding: 20px;
+    background-color: #f0f0f0;
+    /* Grey background */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.frame-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.frame-description {
+    font-size: 16px;
+    color: #666;
+}

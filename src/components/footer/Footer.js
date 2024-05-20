@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { Container, Row, Col } from 'react-bootstrap';
-import { NavLink } from "react-router-dom";
+import { Container, Row, Col, Nav } from 'react-bootstrap';
 import "./Footer.css"
 
 export const Footer = () => {
@@ -17,10 +16,10 @@ export const Footer = () => {
           <Col md={4} className="mb-4">
             <h4>Quick Links</h4>
             <ul className="list-unstyled">
-              <li><NavLink to="/">Home</NavLink></li>
-              <li><NavLink to="/services">Services</NavLink></li>
-              <li><NavLink to="/about">About Us</NavLink></li>
-              <li><NavLink to="/contact">Contact</NavLink></li>
+              <li><Nav.Link href="#">Home</Nav.Link></li>
+              <li><Nav.Link href="#services">Services</Nav.Link></li>
+              <li><Nav.Link href="#about">About Us</Nav.Link></li>
+              <li><Nav.Link href="#contact">Contact</Nav.Link></li>
             </ul>
           </Col>
           <Col md={4} className="mb-4">

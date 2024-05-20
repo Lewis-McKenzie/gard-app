@@ -6,7 +6,7 @@ const ContactForm = () => {
   const [state, handleSubmit] = useForm("xjvnwbda");
 
   return (
-    <div className="contact-form-container">
+    <section className="contact-form-container" id="contact">
       {state.succeeded ? (
         <div className="success-message">
           <p>Thank you for reaching out! We appreciate your inquiry and will get back to you shortly.</p>
@@ -53,7 +53,7 @@ const ContactForm = () => {
           </form>
         </>
       )}
-    </div>
+    </section>
   );
 };
 

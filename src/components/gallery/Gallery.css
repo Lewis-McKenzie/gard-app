@@ -1,0 +1,21 @@
+.gallery-page {
+    text-align: left;
+    font-size: 0px;
+    justify-content: flex-start;
+    padding: 50px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Optional: Add some spacing between frames */
+.gallery .frame {
+    margin: 10px;
+    margin-top: 20px;
+    /* Top margin */
+    margin-bottom: 20px;
+    /* Bottom margin */
+}

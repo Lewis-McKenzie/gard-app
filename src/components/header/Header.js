@@ -1,44 +1,55 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { Container } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { NavLink } from "react-router-dom";
 import logo from "../../resources/logo.png";
 
 const Header = () => {
   const [expanded, setExpanded] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) setScrolled(true);
+      else setScrolled(false);
+
+    }
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [])
 
   const handleNavItemClick = () => {
     setExpanded(false);
   };
 
   return (
-    <Navbar expand="lg" className="navbar-custom fixed-top" expanded={expanded} onSelect={handleNavItemClick}>
+    <Navbar expand="lg" className={scrolled ? "scrolled" : ""} expanded={expanded} onSelect={handleNavItemClick}>
       <Container>
         <Navbar.Brand>
-          <NavLink to="/">
+          <Nav.Link href="#home">
             <img className="logo" src={logo} alt="home" />
-          </NavLink>
+          </Nav.Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <NavLink className="nav-link" to="/" onClick={() => setExpanded(false)}>
+            <Nav.Link className="nav-link" href="#home" onClick={() => setExpanded(false)}>
               Home
-            </NavLink>
-            <NavLink className="nav-link" to="/services" onClick={() => setExpanded(false)}>
+            </Nav.Link>
+            <Nav.Link className="nav-link" href="#services" onClick={() => setExpanded(false)}>
               Services
-            </NavLink>
-            <NavLink className="nav-link" to="/gallery" onClick={() => setExpanded(false)}>
+            </Nav.Link>
+            <Nav.Link className="nav-link" href="#gallery" onClick={() => setExpanded(false)}>
               Gallery
-            </NavLink>
-            <NavLink className="nav-link" to="/contact" onClick={() => setExpanded(false)}>
+            </Nav.Link>
+            <Nav.Link className="nav-link" href="#contact" onClick={() => setExpanded(false)}>
               Contact
-            </NavLink>
-            <NavLink className="nav-link" to="/about" onClick={() => setExpanded(false)}>
+            </Nav.Link>
+            <Nav.Link className="nav-link" href="#about" onClick={() => setExpanded(false)}>
               About
-            </NavLink>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

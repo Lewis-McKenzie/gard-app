@@ -47,8 +47,8 @@ const MapWithRadius = () => {
                     <Marker position={userLocation} icon={userIcon}>
                     </Marker>
                 )}
-                {areasCovered.map((area) => (
-                    <Circle center={area.location} radius={area.radius}>
+                {areasCovered.map((area, index) => (
+                    <Circle key={index} center={area.location} radius={area.radius}>
                         <Popup>
                             Area covered
                         </Popup>
