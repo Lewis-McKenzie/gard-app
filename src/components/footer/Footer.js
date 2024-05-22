@@ -16,10 +16,10 @@ export const Footer = () => {
           <Col md={4} className="mb-4">
             <h4>Quick Links</h4>
             <ul className="list-unstyled">
-              <li><Nav.Link href="#">Home</Nav.Link></li>
+              <li><Nav.Link href="#home">Home</Nav.Link></li>
               <li><Nav.Link href="#services">Services</Nav.Link></li>
-              <li><Nav.Link href="#about">About Us</Nav.Link></li>
               <li><Nav.Link href="#contact">Contact</Nav.Link></li>
+              <li><Nav.Link href="#about">About Us</Nav.Link></li>
             </ul>
           </Col>
           <Col md={4} className="mb-4">
